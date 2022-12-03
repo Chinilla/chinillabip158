@@ -126,7 +126,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     setup_requires=["pybind11>=2.10.0"],
-    url="https://github.com/Chinilla-Network/chinillabip158",
+    url="https://github.com/Chinilla/chinillabip158",
     ext_modules=ext_modules,
     cmdclass={"build_ext": BuildExt},
     zip_safe=False,

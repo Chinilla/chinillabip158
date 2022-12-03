@@ -1,13 +1,13 @@
 # Chinilla BIP158
 
-![Build](https://github.com/Chinilla-Network/chinillabip158/workflows/Build/badge.svg)
+![Build](https://github.com/Chinilla/chinillabip158/workflows/Build/badge.svg)
 ![PyPI](https://img.shields.io/pypi/v/chinillabip158?logo=pypi)
 ![PyPI - Format](https://img.shields.io/pypi/format/chinillabip158?logo=pypi)
-![GitHub](https://img.shields.io/github/license/Chinilla-Network/chinillabip158?logo=Github)
+![GitHub](https://img.shields.io/github/license/Chinilla/chinillabip158?logo=Github)
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chinilla-Network/chinillabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla-Network/chinillabip158/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Chinilla-Network/chinillabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla-Network/chinillabip158/context:python)
-[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Chinilla-Network/chinillabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla-Network/chinillabip158/context:cpp)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chinilla/chinillabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/chinillabip158/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Chinilla/chinillabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/chinillabip158/context:python)
+[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Chinilla/chinillabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/chinillabip158/context:cpp)
 
 This implements the compact block filter construction in BIP 158. The code is
 not used anywhere in the Bitcoin Core code base yet. The next step towards
@@ -73,7 +73,7 @@ installation is then available via `pip install chinillabip158` e.g.
 ## Contributing and workflow
 
 Contributions are welcome and more details are available in chinilla-blockchain's
-[CONTRIBUTING.md](https://github.com/Chinilla-Network/chinilla-blockchain/blob/master/CONTRIBUTING.md).
+[CONTRIBUTING.md](https://github.com/Chinilla/chinilla-blockchain/blob/master/CONTRIBUTING.md).
 
 The master branch is usually the currently released latest version on PyPI.
 Note that at times chinillabip158 will be ahead of the release version that
@@ -82,6 +82,6 @@ new chinilla-blockchain release. Please branch or fork master and then create a
 pull request to the master branch. Linear merging is enforced on master and
 merging requires a completed review. PRs will kick off a GitHub actions ci
 build and analysis of chinillabip158 at
-[lgtm.com](https://lgtm.com/projects/g/Chinilla-Network/chinillabip158/?mode=list).
+[lgtm.com](https://lgtm.com/projects/g/Chinilla/chinillabip158/?mode=list).
 Please make sure your build is passing and that it does not increase alerts
 at lgtm.
