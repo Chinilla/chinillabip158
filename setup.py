@@ -118,8 +118,8 @@ class BuildExt(build_ext):
 
 setup(
     name="chinillabip158",
-    author="Mariano Sorgente",
-    author_email="mariano@chinilla.net",
+    author="Edward Teach",
+    author_email="edward@chinilla.com",
     description="Chinilla BIP158 (wraps C++)",
     license="Apache License",
     python_requires=">=3.7",
