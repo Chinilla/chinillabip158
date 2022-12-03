@@ -26,10 +26,8 @@ jobs:
           - name: macOS
             matrix: macos
             runs-on:
-              arm: [macOS, ARM64]
               intel: [macos-latest]
             cibw-archs-macos:
-              arm: arm64
               intel: x86_64
           - name: Ubuntu
             matrix: ubuntu
@@ -93,7 +91,6 @@ jobs:
               name: macOS
               matrix: macos
               runs-on:
-                arm: [macOS, ARM64]
                 intel: [macos-latest]
             python:
               major-dot-minor: '3.7'
@@ -105,18 +102,15 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chinilla/actions/clean-workspace@main
+      uses: Chia-Network/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
+      Chia-Network      fetch-depth: 0
 
-    - uses: Chinilla/actions/setup-python@main
+    - uses: Chia-Network/actions/setup-python@main
       with:
-        python-version: ${{ matrix.python.major-dot-minor }}
-
-    - name: Install pipx
+        python-version: ${{ matrix.python.major-dot-minor }Chia-Network name: Install pipx
       run: |
         pip install pipx
 
@@ -178,20 +172,20 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chinilla/actions/clean-workspace@main
+      uses: Chia-Network/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: Chinilla/actions/setup-python@main
+    - uses: Chia-Network/actions/seChia-Networkon@main
       with:
         python-version: ${{ matrix.python.major-dot-minor }}
 
     - name: Build source distribution
       run: |
-        pip install build
+        pipChia-Network build
         python -m build --sdist --outdir dist .
 
     - name: Upload artifacts
@@ -221,23 +215,23 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chinilla/actions/clean-workspace@main
+      uses: Chia-Network/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: Chinilla/actions/setup-python@main
+    - uses: Chia-Network/actions/setup-python@main
       with:
-        python-version: ${{ matrix.python.major-dot-minor }}
+       Chia-Networkversion: ${{ matrix.python.major-dot-minor }}
 
     - name: flake8
       run: |
         pip install flake8
         flake8 tests setup.py
 
-    - name: mypy
+    - nChia-Networky
       run: |
         pip install mypy
         mypy --config-file mypi.ini setup.py tests
@@ -267,16 +261,16 @@ jobs:
 
     steps:
     - name: Clean workspace
-      uses: Chinilla/actions/clean-workspace@main
+      uses: Chia-Network/actions/clean-workspace@main
 
     - name: Checkout code
       uses: actions/checkout@v3
       with:
         fetch-depth: 0
 
-    - uses: Chinilla/actions/setup-python@main
+    - uses: Chia-Network/actions/setup-python@main
       with:
-        python-version: ${{ matrix.python.major-dot-minor }}
+        python-version: ${{ matrix.python.majChia-Networkinor }}
 
     - name: Download artifacts
       uses: actions/download-artifact@v3
@@ -284,7 +278,7 @@ jobs:
         name: packages
         path: ./dist
 
-    - name: Test for secrets access
+    - Chia-Networkst for secrets access
       id: check_secrets
       shell: bash
       run: |
