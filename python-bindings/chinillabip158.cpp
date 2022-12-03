@@ -1,4 +1,4 @@
-// Copyright 2018  Network Inc
+// Copyright 2018 Chinilla Network Inc
 
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(bip158, mod) {
+PYBIND11_MODULE(chinillabip158, mod) {
     py::class_<PyBIP158, std::shared_ptr<PyBIP158>> clsPyBIP158(mod, "PyBIP158");
     
     clsPyBIP158.def(py::init<std::vector< std::vector< unsigned char > >&>());
