@@ -1,13 +1,13 @@
-# Chia BIP158
+#  BIP158
 
-![Build](https://github.com/Chia-Network/chiabip158/workflows/Build/badge.svg)
-![PyPI](https://img.shields.io/pypi/v/chiabip158?logo=pypi)
-![PyPI - Format](https://img.shields.io/pypi/format/chiabip158?logo=pypi)
-![GitHub](https://img.shields.io/github/license/Chia-Network/chiabip158?logo=Github)
+![Build](https://github.com/Chinilla/bip158/workflows/Build/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/bip158?logo=pypi)
+![PyPI - Format](https://img.shields.io/pypi/format/bip158?logo=pypi)
+![GitHub](https://img.shields.io/github/license/Chinilla/bip158?logo=Github)
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chia-Network/chiabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chia-Network/chiabip158/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Chia-Network/chiabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chia-Network/chiabip158/context:python)
-[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Chia-Network/chiabip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chia-Network/chiabip158/context:cpp)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/Chinilla/bip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bip158/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/Chinilla/bip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bip158/context:python)
+[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/Chinilla/bip158.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Chinilla/bip158/context:cpp)
 
 This implements the compact block filter construction in BIP 158. The code is
 not used anywhere in the Bitcoin Core code base yet. The next step towards
@@ -68,20 +68,20 @@ them with a source wheel on PyPi. See `.github/workflows/build.yml`. CMake uses
 [FetchContent](https://cmake.org/cmake/help/latest/module/FetchContent.html)
 to download [pybind11](https://github.com/pybind/pybind11). Building is then
 managed by [cibuildwheel](https://github.com/joerick/cibuildwheel). Further
-installation is then available via `pip install chiabip158` e.g.
+installation is then available via `pip install bip158` e.g.
 
 ## Contributing and workflow
 
-Contributions are welcome and more details are available in chia-blockchain's
-[CONTRIBUTING.md](https://github.com/Chia-Network/chia-blockchain/blob/master/CONTRIBUTING.md).
+Contributions are welcome and more details are available in -blockchain's
+[CONTRIBUTING.md](https://github.com/Chinilla/-blockchain/blob/master/CONTRIBUTING.md).
 
 The master branch is usually the currently released latest version on PyPI.
-Note that at times chiabip158 will be ahead of the release version that
-chia-blockchain requires in it's master/release version in preparation for a
-new chia-blockchain release. Please branch or fork master and then create a
+Note that at times bip158 will be ahead of the release version that
+-blockchain requires in it's master/release version in preparation for a
+new -blockchain release. Please branch or fork master and then create a
 pull request to the master branch. Linear merging is enforced on master and
 merging requires a completed review. PRs will kick off a GitHub actions ci
-build and analysis of chiabip158 at
-[lgtm.com](https://lgtm.com/projects/g/Chia-Network/chiabip158/?mode=list).
+build and analysis of bip158 at
+[lgtm.com](https://lgtm.com/projects/g/Chinilla/bip158/?mode=list).
 Please make sure your build is passing and that it does not increase alerts
 at lgtm.
